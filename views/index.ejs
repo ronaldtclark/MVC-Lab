@@ -9,14 +9,18 @@
     
     <% for (let i = 0; i < teams.length; i++) { %>
       <li>
+
         <h3> Country:
           <a href="/soccer/<%=i%>"><%=teams[i].country%></a>
         </h3>
+
         <form method="POST" action="/soccer/<%=i%>?_method=DELETE">
           <button type="submit">Delete</button>
         </form>
 
-
+        <form method="GET" action="/soccer/<%=i%>/edit">
+          <button type="submit">Edit</button>
+        </form>
 
       </li> 
     <% } %>

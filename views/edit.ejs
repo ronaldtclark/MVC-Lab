@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Team</title>
+</head>
+<body>
+  <h1>Edit Team</h1>
+    <form action="/soccer/<%=index%>?_method=PUT" method="POST">
+      Country: <input type="text" name="country" value="<%=soccer.country%>"><br>
+      Manager: <input type="text" name="manager" value="<%=soccer.manager%>"><br>
+      Captain: <input type="text" name="captain" value="<%=soccer.captain%>"><br>
+      Won a World Cup: <input type="checkbox" name="won" 
+          <% if( soccer.won === true) { %>
+            checked 
+          <% } %>
+          ><br>
+    <input type="submit" name="Submit Change">
+  </form>
+
+
+</body>
+</html>

@@ -20,5 +20,25 @@ router.delete('/:id', (req, res) => {
   res.redirect('/soccer')
 })
 
+// EDIT
+
+router.get('/:id/edit', (req, res) => {
+  res.render('edit.ejs', {
+    soccer: SoccerTeams[req.params.id], 
+    index: req.params.id
+  })
+})
+
+// PUT
+
+router.put('/:id', (req, res) => {
+  if(req.body.won === 'on') {
+      req.body.won = true
+    } else {
+      req.body.won = false
+    }
+  SoccerTeams[req.params.id] = req.body
+  res.redirect('/soccer')
+})
 
 module.exports = router;
