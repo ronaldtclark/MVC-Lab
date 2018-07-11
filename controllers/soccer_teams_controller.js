@@ -41,4 +41,12 @@ router.put('/:id', (req, res) => {
   res.redirect('/soccer')
 })
 
+// SHOW
+
+router.get('/:id', (req, res) => {
+  res.render('show.ejs', {
+    soccer: SoccerTeams[req.params.id]
+  })
+})
+
 module.exports = router;

@@ -20,7 +20,7 @@ const soccerTeams = [
 {
   country: 'Croatia',
   manager: 'Zlatko Dalic',
-  captian: 'Luka Modric',
+  captain: 'Luka Modric',
   won: false
 }
 ]

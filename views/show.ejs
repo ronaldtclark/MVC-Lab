@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Page</title>
+</head>
+<body>
+<h1><%=soccer.country%></h1>
+<h2>Manager: <%=soccer.manager%></h2>
+<h2>Captain: <%=soccer.captain%></h2>
+<h2>Won a World Cup? 
+  <% if( soccer.won === true) { %>
+    Yes 
+  <% } else { %>
+    No
+  <% } %> 
+  </h2>
+
+<a href="/soccer">Back to Home</a>
+
+</body>
+</html>
