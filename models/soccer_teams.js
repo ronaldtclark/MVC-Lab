@@ -2,7 +2,7 @@ const soccerTeams = [
 {
   country: 'England',
   manager: 'Gareth Southgate',
-  captain: 'Harry Kane'
+  captain: 'Harry Kane',
   won: true
 }, 
 {
@@ -14,7 +14,7 @@ const soccerTeams = [
 {
   country: 'France',
   manager: 'Didier Deschamps',
-  captain: 'Hugo Lloris'
+  captain: 'Hugo Lloris',
   won: true
 },
 {
@@ -25,3 +25,4 @@ const soccerTeams = [
 }
 ]
 
+module.exports = soccerTeams

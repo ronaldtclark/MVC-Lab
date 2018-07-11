@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Index</title>
+</head>
+<body>
+<h1>Soccer Teams</h1>
+  <ul>
+    
+    <% for (let i = 0; i < teams.length; i++) { %>
+      <li>
+        <h3> Country:
+          <a href="/soccer/<%=i%>"><%=teams[i].country%></a>
+        </h3>
+        <form method="POST" action="/soccer/<%=i%>?_method=DELETE">
+          <button type="submit">Delete</button>
+        </form>
+
+
+
+      </li> 
+    <% } %>
+  
+  </ul>
+
+</body>
+</html>
